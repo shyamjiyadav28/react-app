@@ -7,7 +7,7 @@ export default function Hero() {
   };
 
   return (
-    <div id="home" className="py-16 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-amber-50 via-orange-50 to-white">
+    <div id="home" className="pt-20 sm:pt-24 pb-16 sm:pb-24 md:pb-32 lg:pb-40 bg-gradient-to-b from-amber-50 via-orange-50 to-white">
       <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
         {/* Location Badge */}
         <a 

@@ -12,7 +12,7 @@ export default function Navbar({ cartCount, onCartClick }) {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-desiBlack text-white shadow-lg border-b border-desiRed/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-desiBlack via-red-950 to-amber-950 text-white shadow-lg border-b border-desiRed/20">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 py-3 md:py-4 flex items-center justify-between">
 
         {/* BRAND */}
