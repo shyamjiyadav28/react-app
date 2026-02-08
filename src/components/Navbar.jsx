@@ -53,7 +53,7 @@ export default function Navbar({ cartCount, onCartClick }) {
           <button onClick={() => scrollTo("contact")} className="text-gold hover:text-white transition-colors duration-200 font-medium">Contact</button>
 
           <a
-            href="https://maps.google.com/?q=Desi+Tadka"
+            href="https://maps.app.goo.gl/CJZnMqK3oHcsqhn2A?g_st=aw"
             target="_blank"
             rel="noreferrer"
             className="border-2 border-gold px-4 py-2 rounded-full text-gold hover:bg-gold hover:text-black transition-all duration-200 font-semibold"
@@ -84,7 +84,7 @@ export default function Navbar({ cartCount, onCartClick }) {
               <button onClick={() => scrollTo("gallery")} className="text-left text-gold hover:text-white transition-colors duration-200 font-medium py-2">Gallery</button>
               <button onClick={() => scrollTo("contact")} className="text-left text-gold hover:text-white transition-colors duration-200 font-medium py-2">Contact</button>
               <a
-                href="https://maps.google.com/?q=Desi+Tadka"
+                href="https://maps.app.goo.gl/CJZnMqK3oHcsqhn2A?g_st=aw"
                 target="_blank"
                 rel="noreferrer"
                 className="border-2 border-gold px-3 py-2 rounded-full text-gold hover:bg-gold hover:text-black transition-all duration-200 w-max"

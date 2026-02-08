@@ -2,14 +2,21 @@ export default function MenuCard({ item, onAdd }) {
   return (
     <div className="bg-white rounded-2xl shadow-md card-hover overflow-hidden h-full flex flex-col border border-gray-100">
       {/* Image Container */}
-      <div className="w-full h-32 sm:h-40 md:h-48 overflow-hidden bg-gray-200">
-        <img
-          src={item.image}
-          alt={item.name}
-          loading="lazy"
-          decoding="async"
-          className="w-full h-full object-cover md:hover:scale-105 md:transition-transform md:duration-300"
-        />
+      <div className="w-full h-32 sm:h-40 md:h-48 overflow-hidden bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
+        {item.image ? (
+          <img
+            src={item.image}
+            alt={item.name}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover md:hover:scale-105 md:transition-transform md:duration-300"
+          />
+        ) : (
+          <div className="text-center">
+            <p className="text-sm sm:text-base font-semibold text-orange-600">Photo coming soon</p>
+            <p className="text-xs text-gray-500 mt-1">Add image later</p>
+          </div>
+        )}
       </div>
 
       {/* Content Container */}

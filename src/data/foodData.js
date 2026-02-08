@@ -6,7 +6,7 @@ export const foodData = [
     price: 50,
     category: "Starters",
     popular: false,
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+    image: "",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const foodData = [
     price: 240,
     category: "Starters",
     popular: false,
-    image: "https://images.unsplash.com/photo-1626074353765-517e45f09f10",
+    image: "",
   },
 
   // 🍛 PANEER MAIN COURSE
@@ -40,7 +40,7 @@ export const foodData = [
     price: 225,
     category: "Paneer",
     popular: true,
-    image: "https://images.unsplash.com/photo-1601050690182-2c4a1d1c8b63",
+    image: "",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ export const foodData = [
     price: 220,
     category: "Paneer",
     popular: true,
-    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7",
+    image: "",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ export const foodData = [
     price: 230,
     category: "Paneer",
     popular: false,
-    image: "https://images.unsplash.com/photo-1604908177522-96b1e9a6f3c8",
+    image: "",
   },
   {
     id: 8,
@@ -64,7 +64,7 @@ export const foodData = [
     price: 225,
     category: "Paneer",
     popular: false,
-    image: "https://images.unsplash.com/photo-1601050690211-44c7d6b4c52a",
+    image: "",
   },
 
   // 🍄 MUSHROOM
@@ -74,7 +74,7 @@ export const foodData = [
     price: 225,
     category: "Mushroom",
     popular: false,
-    image: "https://images.unsplash.com/photo-1625944525533-473f1a3d9d7e",
+    image: "",
   },
   {
     id: 10,
@@ -82,7 +82,7 @@ export const foodData = [
     price: 225,
     category: "Mushroom",
     popular: true,
-    image: "https://images.unsplash.com/photo-1626074353765-517e45f09f10",
+    image: "",
   },
 
   // 🍚 DAL & INDIAN
@@ -92,7 +92,7 @@ export const foodData = [
     price: 200,
     category: "Dal",
     popular: true,
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec",
+    image: "",
   },
   {
     id: 12,
@@ -100,7 +100,7 @@ export const foodData = [
     price: 120,
     category: "Dal",
     popular: false,
-    image: "https://images.unsplash.com/photo-1633945274309-2c16c9682b57",
+    image: "",
   },
   {
     id: 13,
@@ -108,7 +108,7 @@ export const foodData = [
     price: 160,
     category: "Dal",
     popular: false,
-    image: "https://images.unsplash.com/photo-1631515242801-497c3f6d9c1a",
+    image: "",
   },
 
   // 🫓 CHAAP
@@ -118,7 +118,7 @@ export const foodData = [
     price: 140,
     category: "Chaap",
     popular: true,
-    image: "https://images.unsplash.com/photo-1626074353765-517e45f09f10",
+    image: "",
   },
   {
     id: 15,
@@ -126,7 +126,7 @@ export const foodData = [
     price: 150,
     category: "Chaap",
     popular: false,
-    image: "https://images.unsplash.com/photo-1631515242801-497c3f6d9c1a",
+    image: "",
   },
   {
     id: 16,
@@ -134,7 +134,7 @@ export const foodData = [
     price: 150,
     category: "Chaap",
     popular: false,
-    image: "https://images.unsplash.com/photo-1604908554168-1f1c9b1c5b64",
+    image: "",
   },
 
   // 🥚 EGG
@@ -144,7 +144,7 @@ export const foodData = [
     price: 110,
     category: "Egg",
     popular: false,
-    image: "https://images.unsplash.com/photo-1600628422019-59f4e41b8b8c",
+    image: "",
   },
   {
     id: 18,
@@ -152,7 +152,7 @@ export const foodData = [
     price: 80,
     category: "Egg",
     popular: true,
-    image: "https://images.unsplash.com/photo-1625944525533-473f1a3d9d7e",
+    image: "",
   },
 
   // 🥔 VEG
@@ -162,7 +162,7 @@ export const foodData = [
     price: 99,
     category: "Veg",
     popular: false,
-    image: "https://images.unsplash.com/photo-1601050690211-44c7d6b4c52a",
+    image: "",
   },
   {
     id: 20,
@@ -170,6 +170,6 @@ export const foodData = [
     price: 140,
     category: "Veg",
     popular: false,
-    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7",
+    image: "",
   },
 ];

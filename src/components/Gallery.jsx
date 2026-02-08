@@ -2,9 +2,6 @@ const images = [
   "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
   "https://images.unsplash.com/photo-1555992336-03a23c08c42c",
   "https://images.unsplash.com/photo-1543357480-cf9c456b4c75",
-  "https://images.unsplash.com/photo-1604908177522-040d2d96b56b",
-  "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-  "https://images.unsplash.com/photo-1516685018646-549c39777251",
 ];
 
 export default function Gallery() {

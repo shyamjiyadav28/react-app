@@ -2,49 +2,49 @@ const testimonials = [
   {
     id: 1,
     name: "Rajesh Kumar",
-    location: "Greater Noida",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "Best authentic North Indian food! The tandoori dishes are absolutely delicious. Highly recommended!",
+    text: "Authentic North Indian food! Best tandoori dishes.",
     avatar: "👨‍💼",
   },
   {
     id: 2,
     name: "Priya Sharma",
-    location: "Noida",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "Fast delivery, hot food, and amazing flavors. Desi Tadka has become our go-to restaurant!",
+    text: "Fast delivery, hot & delicious food. Highly recommended!",
     avatar: "👩‍💼",
   },
   {
     id: 3,
     name: "Anil Patel",
-    location: "Greater Noida",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "Excellent quality and authentic recipes. The customer service is outstanding!",
+    text: "Excellent quality and authentic recipes!",
     avatar: "👨‍🍳",
   },
   {
     id: 4,
     name: "Neha Singh",
-    location: "Noida",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "Got the order in 30 minutes. Everything was perfectly packaged. Will order again!",
+    text: "30 mins delivery, perfectly packaged!",
     avatar: "👩‍💻",
   },
   {
     id: 5,
     name: "Ravi Verma",
-    location: "Noida Sector 62",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "The paneer butter masala is incredible! A taste of heaven in every bite.",
+    text: "Paneer butter masala is incredible!",
     avatar: "👨‍💻",
   },
   {
     id: 6,
     name: "Anjali Yadav",
-    location: "Greater Noida West",
+    location: "Kalyanpur, Kanpur UP",
     rating: 5,
-    text: "Pure North Indian flavors! The breads are fresh and the gravies are perfectly spiced.",
+    text: "Fresh breads & perfectly spiced gravies!",
     avatar: "👩‍🍳",
   },
 ];
@@ -59,26 +59,26 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md card-hover border-2 border-orange-200"
+              className="min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md card-hover border-2 border-orange-200 h-max"
             >
               {/* Rating */}
-              <div className="flex gap-1 mb-3">
+              <div className="flex gap-1 mb-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-desiRed text-base sm:text-lg">★</span>
+                  <span key={i} className="text-desiRed text-sm sm:text-base">★</span>
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-700 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-2 sm:line-clamp-3">
+              <p className="text-gray-700 text-xs sm:text-sm mb-3 sm:mb-4 leading-snug line-clamp-3 min-h-[60px]">
                 "{testimonial.text}"
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-2 pt-3 border-t border-orange-100">
-                <div className="text-2xl sm:text-3xl">{testimonial.avatar}</div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-xs sm:text-sm">{testimonial.name}</h4>
-                  <p className="text-xs text-gray-500">{testimonial.location}</p>
+                <div className="text-2xl flex-shrink-0">{testimonial.avatar}</div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-gray-900 text-xs sm:text-sm truncate">{testimonial.name}</h4>
+                  <p className="text-xs text-gray-500 truncate">{testimonial.location}</p>
                 </div>
               </div>
             </div>

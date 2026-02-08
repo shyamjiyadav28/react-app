@@ -3,17 +3,21 @@ import { MapPin, ArrowRight } from 'lucide-react';
 export default function Hero() {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
   };
 
   return (
     <div id="home" className="py-16 sm:py-24 md:py-32 lg:py-40 bg-gradient-to-b from-amber-50 via-orange-50 to-white">
       <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
         {/* Location Badge */}
-        <div className="inline-flex items-center gap-2 mb-6 sm:mb-8 bg-white px-4 py-2 rounded-full shadow-md border border-amber-200">
+        <a 
+          href="https://maps.app.goo.gl/CJZnMqK3oHcsqhn2A?g_st=aw" 
+          target="_blank" 
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 mb-6 sm:mb-8 bg-white px-4 py-2 rounded-full shadow-md border border-amber-200 hover:border-desiRed hover:shadow-lg transition-all duration-200 cursor-pointer">
           <MapPin className="text-orange-600 w-4 h-4" />
-          <span className="text-xs sm:text-sm font-medium text-gray-700">Greater Noida, UP</span>
-        </div>
+          <span className="text-xs sm:text-sm font-medium text-gray-700">Kalyanpur, Kanpur UP</span>
+        </a>
 
         {/* Main Tagline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-desiRed mb-3 sm:mb-4 leading-tight">

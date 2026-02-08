@@ -31,11 +31,17 @@ export default function CartModal({
               {cart.map((item) => (
                 <div key={item.id} className="flex gap-4 items-start sm:items-center border-b border-gray-100 pb-4 last:border-0">
                   {/* Image */}
-                  <img 
-                    src={item.image} 
-                    alt={item.name} 
-                    className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg flex-shrink-0 shadow-sm"
-                  />
+                  {item.image ? (
+                    <img 
+                      src={item.image} 
+                      alt={item.name} 
+                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg flex-shrink-0 shadow-sm"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex-shrink-0 shadow-sm bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
+                      <p className="text-xs text-orange-600 font-semibold">Photo TBA</p>
+                    </div>
+                  )}
 
                   {/* Details */}
                   <div className="flex-1 min-w-0">

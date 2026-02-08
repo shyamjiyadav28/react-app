@@ -11,6 +11,7 @@ import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import ContactCTA from "./components/ContactCTA";
 import Footer from "./components/Footer";
+import Toast from "./components/Toast";
 import { foodData } from "./data/foodData";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -18,6 +19,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
+  const [toast, setToast] = useState({ show: false, message: "" });
 
   // 🔄 LOAD CART FROM LOCALSTORAGE
   useEffect(() => {
@@ -55,6 +57,7 @@ export default function App() {
       }
       return [...prev, { ...item, qty: 1 }];
     });
+    setToast({ show: true, message: `${item.name} added to cart! ✓` });
   };
 
   // CART CONTROLS
@@ -149,6 +152,11 @@ export default function App() {
       )}
       <WhatsAppButton />
 
+      <Toast 
+        show={toast.show} 
+        message={toast.message} 
+        onClose={() => setToast({ show: false, message: "" })}
+      />
 
       <Footer />
     </>
