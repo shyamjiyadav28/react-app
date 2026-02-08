@@ -1,27 +1,35 @@
 export default function MenuCard({ item, onAdd }) {
   return (
-    <div className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-      <img
-        src={item.image}
-        alt={item.name}
-        className="h-48 w-full object-cover"
-      />
+    <div className="bg-white rounded-2xl shadow-md card-hover overflow-hidden h-full flex flex-col border border-gray-100">
+      {/* Image Container */}
+      <div className="w-full h-40 sm:h-48 md:h-56 overflow-hidden bg-gray-200">
+        <img
+          src={item.image}
+          alt={item.name}
+          loading="lazy"
+          decoding="async"
+          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+        />
+      </div>
 
-      <div className="p-4">
-        <h3 className="font-bold text-lg text-gray-800">
-          {item.name}
-        </h3>
+      {/* Content Container */}
+      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 className="font-bold text-base sm:text-lg text-gray-800 line-clamp-2">{item.name}</h3>
+          {item.description && (
+            <p className="text-xs sm:text-sm text-gray-600 mt-1 line-clamp-1">{item.description}</p>
+          )}
+        </div>
 
-        <div className="flex items-center justify-between mt-3">
-          <span className="text-emerald-600 font-semibold">
-            ₹{item.price}
-          </span>
+        {/* Price and Button */}
+        <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">
+          <span className="text-desiRed font-bold text-lg sm:text-xl">₹{item.price}</span>
 
           <button
             onClick={() => onAdd(item)}
-            className="bg-emerald-500 text-white px-4 py-2 rounded-full text-sm hover:bg-emerald-600"
+            className="btn-primary-sm text-xs sm:text-sm"
           >
-            Add
+            + Add
           </button>
         </div>
       </div>

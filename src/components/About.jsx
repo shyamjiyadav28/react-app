@@ -1,28 +1,42 @@
 export default function About() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    <section id="about" className="section-padding bg-gradient-to-b from-white to-orange-50">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
         
-        <div>
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">
-            About Us
+        <div className="order-2 md:order-1">
+          <h2 className="section-title !mb-6 sm:!mb-8 text-3xl sm:text-4xl md:text-5xl text-desiRed">
+            About Desi Tadka
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Welcome to India Food Court — where passion meets plate! Established with the idea of delivering delicious 
-            and authentic Indian cuisine right to your doorstep, we are committed to serving you fresh, flavorful meals 
-            crafted with love and care.
+          <p className="text-gray-700 leading-relaxed mb-4 sm:mb-6 text-base sm:text-lg">
+            Welcome to Desi Tadka — where tradition meets taste! Born from generations of North Indian culinary heritage, we bring authentic flavors and time-honored recipes to your table. Every spice, every technique, every dish is a celebration of Indian culture.
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            From classic favorites to modern twists, our menu showcases a variety of dishes made from the finest 
-            ingredients. Whether you’re craving a spicy starter or a comforting main course, we’ve got you covered.
+          <p className="text-gray-700 leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg">
+            From the aromatic Tandoori specialties to rich, creamy gravies, from crispy breads to comfort food classics — we create masterpieces that honor our roots while delighting modern palates.
           </p>
+          
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-4 pt-8 sm:pt-12 border-t-2 border-orange-200">
+            <div className="text-center">
+              <div className="text-2xl sm:text-3xl font-bold text-desiRed">50+</div>
+              <div className="text-xs sm:text-sm text-gray-700 mt-2 font-medium">Authentic Dishes</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl sm:text-3xl font-bold text-desiRed">100%</div>
+              <div className="text-xs sm:text-sm text-gray-700 mt-2 font-medium">Fresh Quality</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl sm:text-3xl font-bold text-desiRed">24/7</div>
+              <div className="text-xs sm:text-sm text-gray-700 mt-2 font-medium">Fast Delivery</div>
+            </div>
+          </div>
         </div>
 
-        <div>
+        {/* Image */}
+        <div className="order-1 md:order-2">
           <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=600&fit=crop"
             alt="About Us"
-            className="rounded-3xl shadow-md"
+            className="rounded-3xl shadow-xl w-full h-auto object-cover hover:shadow-2xl transition-shadow duration-300 border-4 border-orange-200"
           />
         </div>
         

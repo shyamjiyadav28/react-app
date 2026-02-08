@@ -5,8 +5,10 @@ import Categories from "./components/Categories";
 import FeaturedMenu from "./components/FeaturedMenu";
 import PopularDishes from "./components/PopularDishes";
 import CartModal from "./components/CartModal";
+import Checkout from "./components/Checkout";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
 import ContactCTA from "./components/ContactCTA";
 import Footer from "./components/Footer";
 import { foodData } from "./data/foodData";
@@ -81,6 +83,17 @@ export default function App() {
     0
   );
 
+  const [showCheckout, setShowCheckout] = useState(false);
+
+  const handlePlaceOrder = (order) => {
+    // for now: clear cart and close checkout
+    setCart([]);
+    setShowCheckout(false);
+    setShowCart(false);
+    // optionally: could persist order or call an API
+    console.log("Order placed:", order);
+  };
+
   return (
     <>
       <Navbar
@@ -108,6 +121,7 @@ export default function App() {
       {/* NEW SECTIONS (NO LOGIC TOUCHED) */}
       <About />
       <Gallery />
+      <Testimonials />
       <ContactCTA />
 
       {showCart && (
@@ -118,6 +132,19 @@ export default function App() {
           onIncrease={increaseQty}
           onDecrease={decreaseQty}
           onRemove={removeItem}
+          onCheckout={() => {
+            setShowCart(false);
+            setShowCheckout(true);
+          }}
+        />
+      )}
+
+      {showCheckout && (
+        <Checkout
+          cart={cart}
+          totalPrice={totalPrice}
+          onClose={() => setShowCheckout(false)}
+          onPlaceOrder={handlePlaceOrder}
         />
       )}
       <WhatsAppButton />

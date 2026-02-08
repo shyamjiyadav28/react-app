@@ -9,19 +9,19 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="py-16 bg-emerald-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-10">
-          Gallery
-        </h2>
+    <section id="gallery" className="section-padding bg-gradient-to-b from-orange-50 to-amber-50">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6">
+        <h2 className="section-title text-center mb-10 sm:mb-14">Our Culinary Gallery</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
           {images.map((src, i) => (
-            <div key={i} className="overflow-hidden rounded-2xl">
+            <div key={i} className="min-w-[calc(100vw-50px)] sm:min-w-[calc(50%-12px)] md:min-w-[calc(33.333%-16px)] lg:min-w-[30%] flex-shrink-0 snap-start overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-4 border-orange-200">
               <img
                 src={src}
                 alt="Food gallery"
-                className="w-full h-full object-cover hover:scale-105 transition"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-56 sm:h-72 md:h-64 object-cover hover:scale-110 transition-transform duration-300"
               />
             </div>
           ))}

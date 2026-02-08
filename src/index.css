@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-gray-50 to-white;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    touch-action: manipulation;
+  }
+
+  input, select, textarea {
+    @apply transition-all duration-200;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    @apply ring-2 ring-emerald-500/20;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-emerald-600 active:bg-emerald-700 transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-primary-sm {
+    @apply bg-emerald-500 text-white font-semibold px-4 py-2 rounded-full hover:bg-emerald-600 active:bg-emerald-700 transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-gray-300 text-gray-700 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 active:bg-gray-200 transition-all duration-200;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 sm:mb-10;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
