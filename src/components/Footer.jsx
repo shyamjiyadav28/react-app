@@ -30,7 +30,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>Email: info@destitadka.com</li>
               <li>Phone: +91 9956785112</li>
-              <li>Address: Greater Noida, UP</li>
+              <li>Address: Kalyanpur, Kanpur UP</li>
             </ul>
           </div>
 

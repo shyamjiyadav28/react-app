@@ -55,29 +55,29 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         <h2 className="section-title text-center mb-12">What Our Guests Say</h2>
 
-        <div className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
+        <div className="flex gap-3 sm:gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="min-w-[calc(100vw-50px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-5 md:p-6 shadow-md hover:shadow-2xl card-hover border-2 border-orange-200"
+              className="min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md hover:shadow-2xl card-hover border-2 border-orange-200"
             >
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-3">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-desiRed text-lg">★</span>
+                  <span key={i} className="text-desiRed text-base sm:text-lg">★</span>
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-700 text-sm mb-5 leading-relaxed line-clamp-3">
+              <p className="text-gray-700 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-2 sm:line-clamp-3">
                 "{testimonial.text}"
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-orange-100">
-                <div className="text-3xl">{testimonial.avatar}</div>
+              <div className="flex items-center gap-2 pt-3 border-t border-orange-100">
+                <div className="text-2xl sm:text-3xl">{testimonial.avatar}</div>
                 <div>
-                  <h4 className="font-bold text-gray-900 text-sm">{testimonial.name}</h4>
+                  <h4 className="font-bold text-gray-900 text-xs sm:text-sm">{testimonial.name}</h4>
                   <p className="text-xs text-gray-500">{testimonial.location}</p>
                 </div>
               </div>

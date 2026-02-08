@@ -36,8 +36,8 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
       <div className="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden">
         
         {/* Header */}
-        <div className="p-5 sm:p-6 bg-gradient-to-r from-emerald-50 to-white border-b border-gray-100 flex justify-between items-center">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Checkout</h2>
+        <div className="p-5 sm:p-6 bg-gradient-to-r from-orange-50 to-amber-50 border-b-2 border-desiRed flex justify-between items-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-desiRed">Checkout</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600 transition-colors p-2 hover:bg-gray-100 rounded-lg">
             ✕
           </button>
@@ -47,7 +47,7 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
         {success ? (
           <div className="p-8 sm:p-12 text-center">
             <div className="flex justify-center mb-6">
-              <CheckCircle className="w-16 h-16 sm:w-20 sm:h-20 text-emerald-500" />
+              <CheckCircle className="w-16 h-16 sm:w-20 sm:h-20 text-desiRed" />
             </div>
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Order Placed!</h3>
             <p className="text-gray-600 text-sm sm:text-base mb-2">Thank you, <span className="font-semibold">{success.customer.name}</span>.</p>
@@ -66,7 +66,7 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
                     value={form.name} 
                     onChange={handleChange} 
                     placeholder="John Doe"
-                    className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition" 
+                    className="w-full border-2 border-orange-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-desiRed focus:border-desiRed transition" 
                   />
                 </div>
 
@@ -77,7 +77,7 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
                     value={form.phone} 
                     onChange={handleChange}
                     placeholder="+91 9876543210"
-                    className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition" 
+                    className="w-full border-2 border-orange-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-desiRed focus:border-desiRed transition" 
                   />
                 </div>
 
@@ -89,7 +89,7 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
                     onChange={handleChange} 
                     rows={3}
                     placeholder="Enter your complete delivery address..."
-                    className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition resize-none" 
+                    className="w-full border-2 border-orange-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-desiRed focus:border-desiRed transition resize-none" 
                   />
                 </div>
 
@@ -99,7 +99,7 @@ export default function Checkout({ cart, totalPrice, onClose, onPlaceOrder }) {
                     name="payment" 
                     value={form.payment} 
                     onChange={handleChange}
-                    className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition"
+                    className="w-full border-2 border-orange-200 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-desiRed focus:border-desiRed transition"
                   >
                     <option value="COD">Cash on Delivery</option>
                     <option value="UPI">UPI</option>

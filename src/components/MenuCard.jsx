@@ -2,7 +2,7 @@ export default function MenuCard({ item, onAdd }) {
   return (
     <div className="bg-white rounded-2xl shadow-md card-hover overflow-hidden h-full flex flex-col border border-gray-100">
       {/* Image Container */}
-      <div className="w-full h-40 sm:h-48 md:h-56 overflow-hidden bg-gray-200">
+      <div className="w-full h-32 sm:h-40 md:h-48 overflow-hidden bg-gray-200">
         <img
           src={item.image}
           alt={item.name}
@@ -13,17 +13,17 @@ export default function MenuCard({ item, onAdd }) {
       </div>
 
       {/* Content Container */}
-      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+      <div className="p-3 sm:p-4 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="font-bold text-base sm:text-lg text-gray-800 line-clamp-2">{item.name}</h3>
+          <h3 className="font-bold text-sm sm:text-base text-gray-800 line-clamp-2">{item.name}</h3>
           {item.description && (
             <p className="text-xs sm:text-sm text-gray-600 mt-1 line-clamp-1">{item.description}</p>
           )}
         </div>
 
         {/* Price and Button */}
-        <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">
-          <span className="text-desiRed font-bold text-lg sm:text-xl">₹{item.price}</span>
+        <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
+          <span className="text-desiRed font-bold text-base sm:text-lg">₹{item.price}</span>
 
           <button
             onClick={() => onAdd(item)}
