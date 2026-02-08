@@ -59,7 +59,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md hover:shadow-2xl card-hover border-2 border-orange-200"
+              className="min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md card-hover border-2 border-orange-200"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-3">

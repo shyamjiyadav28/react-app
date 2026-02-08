@@ -15,13 +15,13 @@ export default function Gallery() {
 
         <div className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
           {images.map((src, i) => (
-            <div key={i} className="min-w-[calc(100vw-50px)] sm:min-w-[calc(50%-12px)] md:min-w-[calc(33.333%-16px)] lg:min-w-[30%] flex-shrink-0 snap-start overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-4 border-orange-200">
+            <div key={i} className="min-w-[calc(100vw-50px)] sm:min-w-[calc(50%-12px)] md:min-w-[calc(33.333%-16px)] lg:min-w-[30%] flex-shrink-0 snap-start overflow-hidden rounded-2xl shadow-lg md:hover:shadow-2xl md:transition-shadow md:duration-300 border-4 border-orange-200">
               <img
                 src={src}
                 alt="Food gallery"
                 loading="lazy"
                 decoding="async"
-                className="w-full h-56 sm:h-72 md:h-64 object-cover hover:scale-110 transition-transform duration-300"
+                className="w-full h-56 sm:h-72 md:h-64 object-cover md:hover:scale-105 md:transition-transform md:duration-300"
               />
             </div>
           ))}

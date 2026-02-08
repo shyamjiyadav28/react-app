@@ -6,7 +6,7 @@ export default function Navbar({ cartCount, onCartClick }) {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: "auto", block: "start" });
       setOpen(false);
     }
   };
@@ -16,7 +16,7 @@ export default function Navbar({ cartCount, onCartClick }) {
       <div className="max-w-7xl mx-auto px-5 sm:px-6 py-3 md:py-4 flex items-center justify-between">
 
         {/* BRAND */}
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wide cursor-pointer hover:text-gold transition">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-black tracking-wide cursor-pointer md:hover:text-gold md:transition-colors md:duration-200">
           <span className="text-gold">Desi</span>
           <span className="text-desiRed">Tadka</span>
         </h1>

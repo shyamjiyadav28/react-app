@@ -6,7 +6,7 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     overflow-x: hidden;
   }
 
@@ -25,7 +25,7 @@
   }
 
   input, select, textarea {
-    @apply transition-all duration-200;
+    @apply transition-colors duration-150;
   }
 
   input:focus, select:focus, textarea:focus {
@@ -55,6 +55,12 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-shadow duration-200;
+  }
+
+  @media (min-width: 768px) {
+    .card-hover {
+      @apply hover:shadow-lg;
+    }
   }
 }

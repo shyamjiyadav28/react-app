@@ -8,7 +8,7 @@ export default function MenuCard({ item, onAdd }) {
           alt={item.name}
           loading="lazy"
           decoding="async"
-          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-cover md:hover:scale-105 md:transition-transform md:duration-300"
         />
       </div>
 
