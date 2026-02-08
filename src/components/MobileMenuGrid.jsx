@@ -6,11 +6,11 @@ export default function MobileMenuGrid({ items = [], onAdd }) {
       <div className="max-w-3xl mx-auto">
         <h3 className="text-lg font-bold text-gray-900 mb-4">Menu</h3>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 justify-items-center">
           {items.map((item) => (
             <article
               key={item.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col text-sm"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col text-sm w-[calc(50vw-12px)]"
               aria-label={item.name}
             >
               {/* Image */}
