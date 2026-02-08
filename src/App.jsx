@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import SearchBar from "./components/SearchBar";
 import Categories from "./components/Categories";
 import FeaturedMenu from "./components/FeaturedMenu";
 import PopularDishes from "./components/PopularDishes";
@@ -17,6 +18,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
   const [toast, setToast] = useState({ show: false, message: "" });
@@ -35,12 +37,17 @@ export default function App() {
   }, [cart]);
 
   // FILTER MENU
-  const filteredItems =
-    selectedCategory === "All"
-      ? foodData
-      : foodData.filter(
-          (item) => item.category === selectedCategory
-        );
+  const filteredItems = foodData.filter((item) => {
+    const matchesCategory =
+      selectedCategory === "All" ||
+      item.category === selectedCategory;
+    const matchesSearch =
+      searchQuery === "" ||
+      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (item.description &&
+        item.description.toLowerCase().includes(searchQuery.toLowerCase()));
+    return matchesCategory && matchesSearch;
+  });
 
   const popularItems = foodData.filter(
     (item) => item.popular
@@ -105,6 +112,8 @@ export default function App() {
       />
 
       <Hero />
+
+      <SearchBar searchQuery={searchQuery} onSearch={setSearchQuery} />
 
       <Categories
         selected={selectedCategory}

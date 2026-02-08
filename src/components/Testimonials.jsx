@@ -86,11 +86,11 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         <h2 className="section-title text-center mb-12">What Our Guests Say</h2>
 
-        <div className="flex gap-3 sm:gap-4 md:gap-5 overflow-x-auto snap-x snap-center -mx-5 sm:-mx-6 md:mx-0 px-8 sm:px-10 md:px-0 pb-2">
+        <div className="flex gap-3 sm:gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className={`min-w-[calc(100vw-80px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-center bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md card-hover border-2 border-orange-200 h-max transition-all duration-500 ${
+              className={`min-w-[calc(100vw-40px)] sm:min-w-[280px] md:min-w-[340px] lg:min-w-[360px] flex-shrink-0 snap-start bg-white rounded-2xl p-3 sm:p-4 md:p-5 shadow-md card-hover border-2 border-orange-200 h-max transition-all duration-500 ${
                 visibleIndices.has(index)
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4 pointer-events-none"

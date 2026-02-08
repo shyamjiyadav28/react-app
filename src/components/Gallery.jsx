@@ -41,9 +41,9 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         <h2 className="section-title text-center mb-10 sm:mb-14">Our Culinary Gallery</h2>
 
-        <div className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto snap-x snap-center -mx-5 sm:-mx-6 md:mx-0 px-8 sm:px-10 md:px-0 pb-2">
+        <div className="flex gap-4 sm:gap-5 md:gap-6 overflow-x-auto snap-x snap-mandatory -mx-5 sm:-mx-6 md:mx-0 px-5 sm:px-6 md:px-0 pb-2">
           {images.map((src, i) => (
-            <div key={i} className={`min-w-[calc(100vw-80px)] sm:min-w-[calc(50%-12px)] md:min-w-[calc(33.333%-16px)] lg:min-w-[30%] flex-shrink-0 snap-center overflow-hidden rounded-2xl shadow-lg md:hover:shadow-2xl md:transition-shadow md:duration-300 border-4 border-orange-200 transition-all duration-500 ${
+            <div key={i} className={`min-w-[calc(100vw-40px)] sm:min-w-[calc(50%-12px)] md:min-w-[calc(33.333%-16px)] lg:min-w-[30%] flex-shrink-0 snap-start overflow-hidden rounded-2xl shadow-lg md:hover:shadow-2xl md:transition-shadow md:duration-300 border-4 border-orange-200 transition-all duration-500 ${
               visibleIndices.has(i)
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4 pointer-events-none"

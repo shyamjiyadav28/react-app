@@ -7,6 +7,7 @@ export const foodData = [
     category: "Starters",
     popular: false,
     image: "",
+    description: "Crispy papad topped with zesty masala and fresh herbs.",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const foodData = [
     category: "Starters",
     popular: true,
     image: "https://images.unsplash.com/photo-1628294896516-344152572ee5",
+    description: "Smoky marinated paneer cubes chargrilled to perfection.",
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ export const foodData = [
     category: "Starters",
     popular: true,
     image: "https://images.unsplash.com/photo-1604908177522-040d2d96b56b",
+    description: "Tangy-spicy paneer tossed with peppers and spring onions.",
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ export const foodData = [
     category: "Starters",
     popular: false,
     image: "",
+    description: "Crispy batter-fried paneer served with mint chutney.",
   },
 
   // 🍛 PANEER MAIN COURSE
@@ -41,6 +45,7 @@ export const foodData = [
     category: "Paneer",
     popular: true,
     image: "",
+    description: "Creamy tomato gravy with soft paneer cubes and buttered spices.",
   },
   {
     id: 6,
@@ -49,6 +54,7 @@ export const foodData = [
     category: "Paneer",
     popular: true,
     image: "",
+    description: "Royal, mildly spiced paneer in rich cashew-based gravy.",
   },
   {
     id: 7,
@@ -57,6 +63,7 @@ export const foodData = [
     category: "Paneer",
     popular: false,
     image: "",
+    description: "Bold kadai masala with bell peppers and chunky paneer.",
   },
   {
     id: 8,
@@ -65,6 +72,7 @@ export const foodData = [
     category: "Paneer",
     popular: false,
     image: "",
+    description: "Creamy, slightly tangy curry with aromatic whole spices.",
   },
 
   // 🍄 MUSHROOM
@@ -75,6 +83,7 @@ export const foodData = [
     category: "Mushroom",
     popular: false,
     image: "",
+    description: "Earthy mushrooms simmered in a velvety, spiced gravy.",
   },
   {
     id: 10,
@@ -83,6 +92,7 @@ export const foodData = [
     category: "Mushroom",
     popular: true,
     image: "",
+    description: "Sizzled mushrooms in robust kadai masala with peppers.",
   },
 
   // 🍚 DAL & INDIAN
@@ -93,6 +103,7 @@ export const foodData = [
     category: "Dal",
     popular: true,
     image: "",
+    description: "Slow-cooked black lentils in buttery, creamy gravy.",
   },
   {
     id: 12,
@@ -101,6 +112,7 @@ export const foodData = [
     category: "Dal",
     popular: false,
     image: "",
+    description: "Yellow lentils tempered with garlic, cumin and ghee.",
   },
   {
     id: 13,
@@ -109,6 +121,7 @@ export const foodData = [
     category: "Dal",
     popular: false,
     image: "",
+    description: "Comforting kidney beans in a thick, spiced tomato gravy.",
   },
 
   // 🫓 CHAAP
@@ -119,6 +132,7 @@ export const foodData = [
     category: "Chaap",
     popular: true,
     image: "",
+    description: "Creamy, mildly spiced chaap pieces, rich and tender.",
   },
   {
     id: 15,
@@ -127,6 +141,7 @@ export const foodData = [
     category: "Chaap",
     popular: false,
     image: "",
+    description: "Charred chaap in aromatic Afghani-style marinade.",
   },
   {
     id: 16,
@@ -135,6 +150,7 @@ export const foodData = [
     category: "Chaap",
     popular: false,
     image: "",
+    description: "Chaap cooked in bold kadai masala with fresh spices.",
   },
 
   // 🥚 EGG
@@ -145,6 +161,7 @@ export const foodData = [
     category: "Egg",
     popular: false,
     image: "",
+    description: "Homestyle egg curry with fragrant spices and tomato base.",
   },
   {
     id: 18,
@@ -153,6 +170,7 @@ export const foodData = [
     category: "Egg",
     popular: true,
     image: "",
+    description: "Spiced scrambled eggs with onions, chilies and herbs.",
   },
 
   // 🥔 VEG
@@ -163,6 +181,7 @@ export const foodData = [
     category: "Veg",
     popular: false,
     image: "",
+    description: "Classic cumin-scented potato curry, simple and tasty.",
   },
   {
     id: 20,
@@ -171,5 +190,6 @@ export const foodData = [
     category: "Veg",
     popular: false,
     image: "",
+    description: "Potato & cauliflower simmered in home-style masala.",
   },
 ];

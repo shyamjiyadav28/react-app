@@ -36,11 +36,11 @@ export default function FeaturedMenu({ items, onAdd }) {
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         <h2 className="section-title">Featured Menu</h2>
 
-        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 overflow-x-auto snap-x snap-center md:overflow-visible -mx-5 sm:-mx-6 md:mx-0 px-8 sm:px-10 md:px-0 pb-2">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 overflow-x-auto snap-x snap-mandatory md:overflow-visible -mx-4 sm:-mx-6 md:mx-0 px-4 sm:px-6 md:px-0 pb-2">
           {items.map((item, index) => (
             <div
               key={item.id}
-              className={`min-w-[calc(100vw-80px)] sm:min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-none snap-center transition-all duration-500 ${
+              className={`min-w-[47.5vw] sm:min-w-[160px] md:min-w-0 flex-shrink-0 md:flex-none snap-start transition-all duration-500 ${
                 visibleIndices.has(index)
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4 pointer-events-none"
